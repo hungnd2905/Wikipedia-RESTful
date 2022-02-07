@@ -6,11 +6,14 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
   - /articles : fetch all the articles. 
   - /articles/hung: fetch article "hung"
 
-2. POST: /articles: create one new article
+2. POST: 
+  - /articles: create one new article
 
-3. PUT: /articles/hung: update the article on hung (completely)
+3. PUT: 
+  - /articles/hung: update the article on hung (completely)
 
-4. PATCH: /articles/hung: update the article on hung(partly)
+4. PATCH: 
+  - /articles/hung: update the article on hung(partly)
 
 5. DELETE: 
   - /articles: delete all the articles

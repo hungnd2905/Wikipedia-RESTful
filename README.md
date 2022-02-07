@@ -12,7 +12,7 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
 
 4. PATCH: /articles/hung: update the article on hung(partly)
 
-5: DELETE: 
+5. DELETE: 
   - /articles: delete all the articles
   - /articles/hung: delete the articles on hung
   
@@ -22,7 +22,7 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
 - {conditions}: optional, if not: find all.
 - More info: MongoDB Documentation  
 
-#POST:
+# POST:
 - app.js: app.post(route,function(req,res){});
 - DB(CREATE): const <constantName> = new <ModelName>({
   <fieldName> : <fieldData>,
@@ -30,7 +30,7 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
   });
   <constantName>.save();
 
-#DELETE:
+# DELETE:
 -app.js: app.detele(route, function(req,res){
 });
 -DB(DELETE): <ModelName>.deleteMany(

@@ -26,8 +26,10 @@ const articleSchema = {
 
 const Article = mongoose.model("Article", articleSchema);
 
+//chained route handler using express
+app.route("/articles")
 // RESTful: GET all articles
-app.get("/articles", function(req,res){
+.get(function(req,res){
   Article.find(function(err, foundArticles){
     //if there is a problem, error could be seen at terminal by console log.
     if(!err){
@@ -36,12 +38,12 @@ app.get("/articles", function(req,res){
       res.send(err);
     }
   });
-});
+})
 
 //RESTful: POST one article
 //Use Postman to test without creating Frontend.
 //Select POST, localhost:3000/articles, Body> x-www.form-urlencoded, write Key-Value with key1=title, key2=content
-app.post("/articles", function(req,res){
+.post(function(req,res){
   const newArticle = new Article({
     title: req.body.title,
     content: req.body.content
@@ -54,15 +56,15 @@ app.post("/articles", function(req,res){
       res.send(err);
     }
   });
-});
+})
 
 //RESTful: DELETE all articles
-app.delete("/articles", function(req,res){
+.delete( function(req,res){
   Article.deleteMany(function(err){
     if(!err){
       res.send("Successfully deleted all articles.");
     } else {
-      res.send(err);  
+      res.send(err);
     }
   });
 });

@@ -1,5 +1,5 @@
 # Wikipedia-RESTful
-Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) without Frontend, using Javascript, Express, Node.js, MongoDB, HTML, CSS and Postman 
+Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) without Frontend, using Javascript, Express, Node.js, MongoDB and Postman 
 
 # RESTful :GET, POST, PUT, PATCH, DELETE
 1. GET: 

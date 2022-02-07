@@ -13,10 +13,10 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
   - /articles/:articleTitle: update the article "articleTitle" (completely- all properties in JS Object)
 
 4. PATCH: 
-  - /articles/hung: update the article "articleTitle" (partly- one/some properties in JS Object)
+  - /articles/:articleTitle: update the article "articleTitle" (partly- one/some properties in JS Object)
 
 5. DELETE: 
   - /articles: delete all the articles
-  - /articles/hung: delete the article "articleTitle"
+  - /articles/:articleTitle: delete the article "articleTitle"
   
 

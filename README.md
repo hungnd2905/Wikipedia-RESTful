@@ -16,13 +16,13 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
   - /articles: delete all the articles
   - /articles/hung: delete the articles on hung
   
-# GET:
+# GET (all articles):
 - app.js : app.get(route, function(req,res){});
 - DB(READ): <ModelName>.find({conditions}, function(err, results){});
 - {conditions}: optional, if not: find all.
 - More info: MongoDB Documentation  
 
-# POST:
+# POST (a specific article):
 - app.js: app.post(route,function(req,res){});
 - DB(CREATE): const <constantName> = new <ModelName>({
   <fieldName> : <fieldData>,
@@ -30,7 +30,7 @@ Build a Wikipedia web app RESTful (HTTP Verb: GET, POST, PUT, PATCH, DELETE) wit
   });
   <constantName>.save();
 
-# DELETE:
+# DELETE ( all articles):
 -app.js: app.detele(route, function(req,res){
 });
 -DB(DELETE): <ModelName>.deleteMany(
